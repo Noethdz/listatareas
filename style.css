@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+    color: #dfcffd;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #3c9494, #2a3088, #9d68ff, #108353);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+.container {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: rgb(49, 49, 148);
+    box-shadow: 0 0 5pc rgb(43, 37, 37, 0.35);
+    border-radius: 3%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(29, 131, 34);
+    color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 3%;
+}
+
+button:hover {
+    background-color: rgb(7, 134, 156);
+    color: black;
+}
+
+.deleteBtn {
+    width: 10%;
+    padding: 5px;
+    background-color: rgb(255, 60, 0);
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    color: white;
+    scale: 1.1;
+    background-color: red;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: rgb(177, 177, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        color: rgb(102, 179, 224);
+        font-size: 25px;
+    }
+    body {
+        height: 1280px;
+        background: linear-gradient(225deg, #104b83, #1d868a, #7b0e96, #104b83);
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 70%;
+        padding: 10px;
+        background-color: rgb(48, 180, 54);
+        color: white;
+        box-shadow: 0 0 5px black;
+        border-radius: 3%;
+        font-size: smaller;
+    }
+    .buttons a {
+        transform: scale(0.8);
+    }
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #b7b5c9;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px blueviolet;
+    transition: all 0.4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
